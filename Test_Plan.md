@@ -146,4 +146,4 @@ We will test:
 
 1. Ryan Koech
 2. Simret Yibeltal
-3. Stephen
+3. Stephen Ayiti
