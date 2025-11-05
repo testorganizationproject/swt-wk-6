@@ -112,7 +112,7 @@ We will test:
 |------|---------|------------------|
 | TEST MANAGER | Ryan Koech | Oversees planning, assigns Jira tickets, compiles final reports |
 | RISK ANALYST | Simret Yibeltal | Tests catalog, cart, and checkout functionality |
-| TEXT EXECUTOR | Stephen | Focuses on accessibility, performance, and defect verification |
+| TEXT EXECUTOR | Stephen Ayiti | Focuses on accessibility, performance, and defect verification |
 
 **Communication Plan**  
 - Jira board for assigning and tracking issues  
