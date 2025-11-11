@@ -98,7 +98,7 @@ All transitions work as expected; proper UI updates occur.
 
 ---
 
-## 🧰 7. QA Checklist for Test Cases
+## 🧰 7. Checklist for Test Cases
 
 
 | Checklist Item  | Description | Done |
