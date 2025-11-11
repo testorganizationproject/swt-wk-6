@@ -102,12 +102,12 @@ All transitions work as expected; proper UI updates occur.
 
 
 | Checklist Item  | Description | Done |
-|----|--------|-----------|----------|----------|
-| **Clear Objective**  | Each test case has a clear goal | [x] |  
-| **Expected Outcome Defined**  | Pass/fail conditions explicit | [x] | 
-| **Covers Valid & Invalid Inputs** | Includes edge and error cases | [x] | 
-| **Simplicity** | Easy to understand and execute | [x] |  
-| **Reusable Data** | Shared setup documented | [x] |   
+|-----------|----------|----------|
+| **Clear Objective**  | Each test case has a clear goal |  ☑ |  
+| **Expected Outcome Defined**  | Pass/fail conditions explicit |  ☑ | 
+| **Covers Valid & Invalid Inputs** | Includes edge and error cases |  ☑ | 
+| **Simplicity** | Easy to understand and execute |  ☑ |  
+| **Reusable Data** | Shared setup documented |  ☑ |   
 
 
 ---
