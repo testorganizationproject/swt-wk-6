@@ -54,10 +54,10 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 
 | Conditions | Logged In  | Cart Has Items |Payment Valid | Expected Outcome |
 |--------|--------------|---------------|---------------------------|----------------|
-|Case 1 | No | - | Redirect to login |  |
-|Case 2 | Yes | No | Show “Cart Empty” |  
-|Case 3 | Yes | Yes | Stay on checkout, show error |  
-|Case 4 | Yes | Yes | Complete order successfully |  
+|Case 1 | No | - | - | Redirect to login |
+|Case 2 | Yes | No | - | Show “Cart Empty” |
+|Case 3 | Yes | Yes | Invalid | Stay on checkout, show error |
+|Case 4 | Yes | Yes | Valid | Stay on checkout, show errorComplete order successfully |  
 
 
 **Findings:**  
