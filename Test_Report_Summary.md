@@ -86,13 +86,13 @@ All transitions work as expected; proper UI updates occur.
 
 ## 🐞 6. Sample Functional Test Cases
 
-| ID | Feature | Objective | Type | Steps | Expected Result |
-|----|--------|-----------|----------|----------|--------------|
-| TC-01 | Search | Verify books display after valid search | Black-box  | Enter “Harry” → Search | Matching books shown
-| TC-02 | Cart | Verify adding an item increases badge count | Black-box  | Click “Add to Cart” | Badge +1 |
-| TC-03 | Checkout | Verify “Pay Now” works with valid data | Black-box  | Fill checkout → Submit | "Payment successful” |
-| TC-04 | LocalStorage | Verify cart persists after reload | White-box |Add item → Refresh | Cart restored |
-| TC-05 | Route Guard | Verify `/admin` inaccessible to non-admin | White-box | Visit `/admin` as user | Redirected to `/login` |
+| ID   | Feature | Objective | Type | Steps | Expected Result |
+|------|--------|-----------|----------|----------|--------------|
+|  TC-01  | Search | Verify books display after valid search | Black-box  | Enter “Harry” → Search | Matching books shown
+|  TC-02  | Cart | Verify adding an item increases badge count | Black-box  | Click “Add to Cart” | Badge +1 |
+|  TC-03  | Checkout | Verify “Pay Now” works with valid data | Black-box  | Fill checkout → Submit | "Payment successful” |
+|  TC-04  | LocalStorage | Verify cart persists after reload | White-box |Add item → Refresh | Cart restored |
+|  TC-05  | Route Guard | Verify `/admin` inaccessible to non-admin | White-box | Visit `/admin` as user | Redirected to `/login` |
 
 
 
@@ -101,17 +101,13 @@ All transitions work as expected; proper UI updates occur.
 ## 🧰 7. QA Checklist for Test Cases
 
 
-| # | Checklist Item  | Description | Done |
+| Checklist Item  | Description | Done |
 |----|--------|-----------|----------|----------|
-| **Clear Objective**  |  |  |  
-| **Expected Outcome Defined**  | |  | 
-| **Traceable to Requirement** |  |  |  
-| **Covers Valid & Invalid Inputs** |  |  | 
-| **Simplicity** |  |  |  
-| **Independent** | |  |   
-| **Reusable Data** |  |  |  
-| **Automatable** |  |  |  
-| **Review Ready** |  |  |  
-| **Results Loggable** |  |  |  
+| **Clear Objective**  | Each test case has a clear goal | [x] |  
+| **Expected Outcome Defined**  | Pass/fail conditions explicit | [x] | 
+| **Covers Valid & Invalid Inputs** | Includes edge and error cases | [x] | 
+| **Simplicity** | Easy to understand and execute | [x] |  
+| **Reusable Data** | Shared setup documented | [x] |   
+
 
 ---
