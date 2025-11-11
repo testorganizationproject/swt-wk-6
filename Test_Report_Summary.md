@@ -37,9 +37,9 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 
 | Parameter | Boundaries  | Test Values  | Expected  | Notes | 
 |------------|------------|-----------|--------|---------|
-|**Quantity**  |  |  |  |  | 
-| **Price Range** |  |  |  | | 
-| **Search Length** |  |  |  | |
+|**Quantity**  |  1–10  | 0, 1, 2, 9, 10, 11 | 0 & 11 → reject | “0” accepted (should be invalid) | 
+| **Price Range** | 0–1500 | -1, 0, 1, 1499, 1500, 1501 | -1,1501 → invalid | Accepts all values silently | 
+| **Search Length** | 1–50  | 0, 1, 50, 51  | 0,51 → invalid |Accepts 0 as “all” (OK) |
 **Summary:**  
 - Lower boundary for quantity is not validated (defect).  
 - Price boundaries inclusive but lack validation feedback. 
