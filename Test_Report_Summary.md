@@ -71,7 +71,7 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 ### ** Actions and Transitions**
 
 | Current State | Action / Event | Expected Next State | Expected Behavior |
-|----------------|----------------|---------------------|-------------------|-----------|
+|----------------|----------------|---------------------|-------------------|
 |Empty Cart | Add item | Has Items | Badge updates |
 | Has Items | Remove all  | Empty Cart | Badge resets |
 |Checkout | Payment success |  Order confirmed | Redirect to success page |
