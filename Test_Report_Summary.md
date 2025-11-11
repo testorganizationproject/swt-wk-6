@@ -1,7 +1,7 @@
 # 🧪 Project : Test cases and checklist Report  
 **System Under Test:** Bookstore System 
 **Team:** KEN  
-**Team Memebers Name:** Simret Yibeltal,  Ryan 
+**Team Memebers Name:** Ryan Koech, Simret Yibeltal, Stephen Ayiti 
 **Tools:** Jira • GitHub
 **Phase 2 Due:** November 11, 2025  
 
@@ -86,14 +86,32 @@ All transitions work as expected; proper UI updates occur.
 
 ## 🐞 6. Sample Functional Test Cases
 
+| ID | Feature | Objective | Type | Steps | Expected Result |
+|----|--------|-----------|----------|----------|--------------|
+| TC-01 | Search | Verify books display after valid search | Black-box  | Enter “Harry” → Search | Matching books shown
+| TC-02 | Cart | Verify adding an item increases badge count | Black-box  | Click “Add to Cart” | Badge +1 |
+| TC-03 | Checkout | Verify “Pay Now” works with valid data | Black-box  | Fill checkout → Submit | "Payment successful” |
+| TC-04 | LocalStorage | Verify cart persists after reload | White-box |Add item → Refresh | Cart restored |
+| TC-05 | Route Guard | Verify `/admin` inaccessible to non-admin | White-box | Visit `/admin` as user | Redirected to `/login` |
 
-| ID | Objective | Type | Steps | Expected Result |
+
+
+---
+
+## 🧰 7. QA Checklist for Test Cases
+
+
+| # | Checklist Item  | Description | Done |
 |----|--------|-----------|----------|----------|
-|  |  |  |  |  |
-|   |  |  |  | |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-
+| **Clear Objective**  |  |  |  
+| **Expected Outcome Defined**  | |  | 
+| **Traceable to Requirement** |  |  |  
+| **Covers Valid & Invalid Inputs** |  |  | 
+| **Simplicity** |  |  |  
+| **Independent** | |  |   
+| **Reusable Data** |  |  |  
+| **Automatable** |  |  |  
+| **Review Ready** |  |  |  
+| **Results Loggable** |  |  |  
 
 ---
