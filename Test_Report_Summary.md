@@ -36,7 +36,7 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 **Objective:** Test values around the edges of valid input ranges.  
 
 | Parameter | Boundaries  | Test Values  | Expected  | Notes | 
-|------------|------------------------------|-----------|--------|
+|------------|------------|-----------|--------|---------|
 |**Quantity**  |  |  |  |  | 
 | **Price Range** |  |  |  | | 
 | **Search Length** |  |  |  | |
@@ -46,7 +46,7 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 
 ---
 
-## 📊 3. Decision Table Testing (DTT)
+## 📊 4. Decision Table Testing (DTT)
 
 **Objective:** Verify logical combinations of key conditions. 
 
@@ -63,7 +63,7 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 - Payment failures handled gracefully.  
 ---
 
-## 🔄 4. State / Flow Testing
+## 🔄 5. State / Flow Testing
 
 **Objective:** Validate correct state transitions for cart and order flow.  
 
@@ -80,9 +80,9 @@ To design **effective and comprehensive test cases** for the Book Store App ensu
 **Observation:**  
 All transitions work as expected; proper UI updates occur. 
 
-```
+---
 
-## 🐞 5. Sample Functional Test Cases
+## 🐞 6. Sample Functional Test Cases
 
 
 | ID | Objective | Type | Steps | Expected Result |
