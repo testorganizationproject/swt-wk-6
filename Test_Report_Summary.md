@@ -88,7 +88,7 @@ All transitions work as expected; proper UI updates occur.
 
 | ID   | Feature | Objective | Type | Steps | Expected Result |
 |------|--------|-----------|----------|----------|--------------|
-|  TC-01  | Search | Verify books display after valid search | Black-box  | Enter “Harry” → Search | Matching books shown
+|  TC-01  | Search | Verify books display after valid search | Black-box  | Enter “Harper” → Search | Matching books shown
 |  TC-02  | Cart | Verify adding an item increases badge count | Black-box  | Click “Add to Cart” | Badge +1 |
 |  TC-03  | Checkout | Verify “Pay Now” works with valid data | Black-box  | Fill checkout → Submit | "Payment successful” |
 |  TC-04  | LocalStorage | Verify cart persists after reload | White-box |Add item → Refresh | Cart restored |
