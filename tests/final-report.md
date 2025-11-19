@@ -18,10 +18,8 @@ We followed a structured approach aligned to ISTQB principles:
 ### ✔ Equivalence Partitioning (EP)  
 ### ✔ Boundary Value Analysis (BVA)  
 ### ✔ Decision Table Testing  
-### ✔ State Machine Testing  
 ### ✔ Functional + UI Validation  
 ### ✔ Accessibility (a11y) Review  
-### ✔ Performance Lite Audit (Lighthouse)
 
 Test artifacts are traceable to functional requirements via FR codes.
 
@@ -31,10 +29,9 @@ Test artifacts are traceable to functional requirements via FR codes.
 | Component | Details |
 |----------|---------|
 | Browsers | Chrome 129, Firefox 123 |
-| OS | Windows 11 / macOS Sonoma |
-| Network | 10 Mbps throttling for perf tests |
-| Devices | Desktop only |
-| Tools | Lighthouse, Axe DevTools, Screen Reader (NVDA), GitHub, Jira |
+| OS | Windows 11 / Windows |
+| Devices | Laptop only |
+| Tools | GitHub, Jira |
 
 ---
 
@@ -61,7 +58,7 @@ See `tests/defect-log.md` for full detail.
 | ID | Severity | Summary |
 |-----|-----------|---------|
 | BUG-CART-01 | Major | Quantity=0 accepted as valid |
-| BUG-SEARCH-02 | Minor | Price out-of-range silently accepted |
+| BUG-SEARCH-02 | Minor | One of the search not working |
 
 Risk is moderate because issues affect checkout and user feedback clarity.
 
@@ -74,13 +71,12 @@ Audited with **Axe**, **NVDA**, and manual keyboard navigation.
 |------|--------|-------|
 | Keyboard navigation | ✔ | All inputs reachable |
 | Screen reader labels | ❌ | “Add to Cart” missing aria-label |
-| Contrast ratio | ✔ | Meets WCAG AA |
 | Focus outline | ✔ | Visible on all controls |
-| Error messaging (aria-live) | ❌ | Validation errors not announced |
+
 
 ### Recommendations  
 - Add `aria-label="Add to Cart"` for icon-only buttons  
-- Use `aria-live="polite"` for validation messages  
+
 
 ---
 
