@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ID: TC-SEARCH-01
 
 Title: Verify books display after valid search
@@ -93,4 +94,119 @@ Checklist for Test Cases
 | **Covers Valid & Invalid Inputs** | Includes edge and error cases |  ☑ | 
 | **Simplicity** | Easy to understand and execute |  ☑ |  
 | **Reusable Data** | Shared setup documented |  ☑ |   
+=======
+# 📑 Test Cases — Bookstore System  
+**Team:** KEN  
+
+---
+
+## 🔍 Search (FR-S01)
+
+### **TC-S-01 — Valid Search Displays Results**
+**Pre-conditions:** App loaded  
+**Steps:**  
+1. Enter “Harry” in search bar  
+2. Click Search  
+**Expected Result:** Matching books displayed  
+**Post-conditions:** None  
+**Evidence:** `/evidence/tc-s-01.png`
+
+---
+
+### **TC-S-02 — Empty Search Shows No Results**
+**Steps:**  
+1. Leave search bar empty  
+2. Click Search  
+**Expected:** “No results found”  
+**Evidence:** `/evidence/tc-s-02.png`
+
+---
+
+### **TC-S-03 — Invalid Symbols Show No Crash**
+**Steps:**  
+1. Enter “###”  
+2. Search  
+**Expected:** “No results found”; UI stable  
+---
+
+### **TC-S-04 — Price Filter Within Range**
+**Steps:**  
+1. Enter price range 0–1500  
+**Expected:** Results filtered  
+---
+
+---
+
+## 🛒 Cart (FR-C01)
+
+### **TC-C-01 — Add Item Increases Badge**
+**Steps:**  
+1. Click “Add to Cart”  
+**Expected:** Count increments by 1  
+
+---
+
+### **TC-C-02 — Remove All Returns to Empty Cart**
+**Expected:** Badge resets to 0  
+
+---
+
+### **TC-C-03 — Quantity Lower Boundary (INVALID)**
+**Steps:**  
+1. Set quantity = 0  
+2. Attempt checkout  
+**Expected:** Validation error  
+**Actual (BUG-CART-01):** Checkout allowed  
+**Evidence:** `/evidence/bug-cart-01.gif`
+
+---
+
+### **TC-C-04 — Quantity Upper Boundary**
+**Steps:**  
+1. Set quantity = 11  
+**Expected:** Reject with error  
+
+---
+
+---
+
+## 💳 Checkout (FR-P01)
+
+### **TC-P-01 — Valid Payment**
+**Steps:**  
+1. Fill valid details  
+2. Click Pay  
+**Expected:** “Payment successful”  
+
+---
+
+### **TC-P-02 — Invalid Payment**
+**Expected:** Error message displayed  
+
+---
+
+---
+
+## 🔐 Auth & Access Control (FR-A01)
+
+### **TC-A-01 — Non-Admin Cannot Access /admin**
+**Expected:** Redirect to login  
+
+---
+
+### **TC-A-02 — Logged-Out User Cannot Checkout**
+**Expected:** Redirect to login  
+
+---
+
+---
+
+## 💾 Local Storage (FR-L01)
+
+### **TC-LS-01 — Cart Persists After Reload**
+**Steps:**  
+1. Add item  
+2. Refresh page  
+**Expected:** Cart restored  
+>>>>>>> 14e9ef0 (Final)
 

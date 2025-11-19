@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## ID: BUG-SEARCH-001
 
 Summary: Duplicate search bars visible; one non-functional
@@ -52,3 +53,40 @@ Attachments: screenshots/checkout-quantity-bug.png, videos/checkout-quantity-dem
 
 Notes:
 This impacts revenue and payment validation logic. Likely a miscalculation in CheckoutService.js or cart-to-order mapping logic. No workaround — all high-quantity purchases undercharge.
+=======
+# 🐞 Defect Log — Bookstore System
+
+---
+
+## BUG-CART-01  
+**Summary:** Quantity set to 0 is accepted  
+**Severity:** Major  
+**Priority:** High  
+**Environment:** Chrome 129 / Windows 11  
+**Affected FR:** FR-C01  
+**Steps:**  
+1. Open cart  
+2. Set quantity to 0  
+3. Proceed to checkout  
+**Expected:** Error message; checkout blocked  
+**Actual:** Checkout proceeds successfully  
+**Attachments:** `/evidence/bug-cart-01.png`  
+**Notes:** Impacts all orders; critical validation defect.
+
+---
+
+## BUG-SEARCH-02  
+**Summary:** Price out-of-range accepted silently  
+**Severity:** Minor  
+**Priority:** Medium  
+**Environment:** Chrome 129  
+**Affected FR:** FR-S01  
+**Steps:**  
+1. Enter price range: -10 to 2000  
+2. Click Apply  
+**Expected:** Error message  
+**Actual:** Filter applies silently  
+**Attachments:** `/evidence/bug-search-02.png`  
+**Notes:** UI-only issue; backend still correct.
+
+>>>>>>> 14e9ef0 (Final)
